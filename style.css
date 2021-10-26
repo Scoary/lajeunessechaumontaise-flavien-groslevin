@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
-body{
-    height: 5000px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;600;800&display=swap');
+
 .navbar-brand{
     font-family: 'Zen Tokyo Zoo', cursive;
 }
@@ -21,4 +20,24 @@ body{
         font-family: 'Zen Tokyo Zoo', cursive;
         font-size: small;
     }
+}
+@media screen and (min-width: 1024px)
+{
+    .texthero{
+        margin: auto;
+        width: 50%;
+        font-family: 'Vollkorn', serif;
+        text-align: justify;
+    }
+}
+#hero{
+    background-image: url(banniere1.jpg);
+    background-size: cover ;
+}
+.titlehero{
+    font-family: 'Montserrat', sans-serif;
+}
+.texthero{
+    font-family: 'Vollkorn', serif;
+    text-align: justify;
 }
