@@ -34,7 +34,7 @@ body{
     }
 }
 #hero{
-    background-image: url(banniere1.jpg);
+    background-image: url(img/banniere1.jpg);
     background-size: cover ;
 }
 .texthero{
@@ -44,7 +44,7 @@ body{
 .aboutus{
     text-align: justify;
 }
-.tittleabout{
+.h2tittle{
     color: #D66F00;
     border-bottom: 1px solid gray;
     margin-bottom: 20px;
@@ -57,3 +57,13 @@ body{
     color: white;
     background-color: #ff8400;
 }
+.card-img-top{
+    object-fit: cover;
+}
+
+@media screen and (max-width: 991.98px) {
+    
+    .cargroup{
+        overflow: scroll;
+    }
+}    

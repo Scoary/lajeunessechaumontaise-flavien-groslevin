@@ -4,3 +4,4 @@
 #on ignore les fichiers png et jpg 
 *.png
 *.jpg
+/img
