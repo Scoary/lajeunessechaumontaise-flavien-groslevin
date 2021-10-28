@@ -112,5 +112,14 @@ p{
     border-radius: 21px;
 }
 .contact{
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 21px;
     background: linear-gradient(0deg, rgb(31, 33, 37) 0%, #D66F00 100%);
+}
+#scrollUp
+{
+    font-size: 1.5em;
+    position: fixed;
+    bottom : 20px;
+    right: 20px;
 }
