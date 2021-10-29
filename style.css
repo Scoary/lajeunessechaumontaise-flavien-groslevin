@@ -41,6 +41,10 @@ p{
     background-image: url(img/banniere1.jpg);
     background-size: cover ;
 }
+#heroaboutus{
+    background-image: url(img/heroaboutus.jpg);
+    background-size: cover;
+}
 .texthero{
     font-family: 'Vollkorn', serif;
     text-align: justify;
@@ -138,3 +142,22 @@ p{
     margin-top: -2vh;
 }
 /* END adherer.html */
+
+/* a-propos-de-nous */
+.texthero-about{
+    font-weight: bold;
+    font-size: 6vh;
+    text-align: start;
+}
+@media screen and (max-width: 1024px) {
+    .texthero-about{
+        font-weight: bold;
+        font-size: 2em;
+        text-align : justify;
+    }
+}
+.bg-aboutus{
+    background-image: url(/img/supporter8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
