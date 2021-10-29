@@ -161,3 +161,12 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.mod-articles{
+    background-image: url(/img/bgbparledenous.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+.articles{
+    background-color: rgba(0, 0, 0, 0.582);
+}
