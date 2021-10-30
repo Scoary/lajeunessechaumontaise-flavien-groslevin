@@ -45,6 +45,10 @@ p{
     background-image: url(img/heroaboutus.jpg);
     background-size: cover;
 }
+#heroevenement{
+    background-image: url(img/afficheevenement.jpeg);
+    background-size: cover;
+}
 .texthero{
     font-family: 'Vollkorn', serif;
     text-align: justify;
@@ -179,4 +183,9 @@ p{
         flex-wrap: nowrap;
         overflow: scroll;
     }
+}
+/* End A propos de nous */
+/* evenement */
+.checkprice{
+    color: green;
 }
