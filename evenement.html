@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent ">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="img/logo.png" alt="" width="40" height="40" class="d-inline-block mx-1">
@@ -60,7 +60,9 @@
                         <h2 class="mb-4 p-5">La recontre <strong>PARIS / CHAUMONT</strong></h2>
                         <h3><i class="bi bi-calendar"></i> 04 Janvier 2022</h3>
                         <h3><i class="bi bi-map"></i> Salle Pierre Charpy - PARIS </h3>
-                        <a class="btn btn-outline-light btn-lg m-5" role="button" rel="nofollow">S'inscrire</a>
+                        <button type="button" class="btn btn-lg btn-outline-light mt-5" data-bs-toggle="modal"
+                            data-bs-target="#register">S'inscrire
+                        </button>
                         <span class="scroll-down"></span>
                     </div>
                 </div>
@@ -69,7 +71,7 @@
     </header>
     <main class="m-5">
         <section>
-            <h2 class="h2tittle text-center">Détail du Déplacement PARIS / Chaumont</h2>
+            <h2 class="h2tittle text-center mb-lg-5">Détail du Déplacement PARIS / Chaumont</h2>
             <div class="row justify-content-center">
                 <div class="col-md-3 text-center shadow-lg rounded-3 m-3">
                     <h2 class="mt-3"><i class="fas fa-bus fa-2x"></i></h2>
@@ -86,8 +88,8 @@
                         Il va falloir mettre le feu ! <i class="fas fa-fire"></i></p>
                 </div>
         </section>
-        <section>
-            <h2 class="h2tittle text-center">Nos Formules de prix :</h2>
+        <section class="mt-lg-5">
+            <h2 class="h2tittle text-center mb-lg-5">Nos Formules de prix :</h2>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
@@ -103,7 +105,9 @@
                                 </li>
                                 <li><i class="fas fa-check-circle fa-lg"></i> 1 sandwich pendant le match</li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">S'inscrire</button>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#register">S'inscrire
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -121,7 +125,9 @@
                                 </li>
                                 <li><i class="fas fa-check-circle fa-lg"></i> 1 sandwich pendant le match</li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">S'inscrire</button>
+                            <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#register">S'inscrire
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -137,17 +143,120 @@
                                     Paris/Chaumont</li>
                                 <li><i class="checkprice fas fa-check-circle fa-lg"></i> Transport en Bus Aller/retour
                                 </li>
-                                <li><i class="checkprice fas fa-check-circle fa-lg"></i> 1 sandwich pendant le match</li>
+                                <li><i class="checkprice fas fa-check-circle fa-lg"></i> 1 sandwich pendant le match
+                                </li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-success">S'inscrire</button>
+                            <button type="button" class="w-100 btn btn-lg btn-success" data-bs-toggle="modal"
+                                data-bs-target="#register">S'inscrire
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
             <h4>Personne déjà inscrite :</h4>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="37" aria-valuemin="0" aria-valuemax="52" style="width: 71%">37 inscrits sur 52</div>
-              </div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                    aria-valuenow="37" aria-valuemin="0" aria-valuemax="52" style="width: 71%">37 inscrits sur 52</div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header btn-custom">
+                            <h5 class="modal-title" id="exampleModalLabel">S'inscrire </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <label for="firstName" class="form-label">Prénom :<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="lastName" class="form-label">Nom :<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email :<sup>*</sup></label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="nom@exemple.com" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="phone" class="form-label">Téléphone :<sup>*</sup></label>
+                                        <input type="number" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="membership" class="form-label">Adhérent ?<sup>*</sup>
+                                            <select class="form-select" id="membership" required>
+                                                <option>Non</option>
+                                                <option>Adhérent seule</option>
+                                                <option>Adhérent avec abonnement</option>
+                                            </select>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="comment">Votre message :</label>
+                                        <textarea class="form-control" id="comment" rows="4"
+                                            placeholder="Ecrivez votre message ici" style="resize: none;"></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-custom btn-lg">S'inscrire</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Modal -->
+        <section class="mt-lg-5">
+            <h2 class="h2tittle text-center mb-lg-5 mt-5">Nos Evenements à venir :</h2>
+            <div class="row justify-content-center">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col mb-4">
+                        <div class="card rounded-3 shadow-sm h-100">
+                            <div class="card-header py-3 ">
+                                <h4 class="my-0 fw-normal">Soirée du Nouvel an</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Célébrez avec nous, la nouvelle année 2022 en dansant et partager un moment de convivialité. Tout est organisé par nos soins ! On vous demandera de venir avec votre bonne humeur ! </p>
+                                <p><i class="fas fa-fire"></i> DJ Sam sur place </p>
+                                <p><i class="bi bi-calendar"></i> 31 Décembre 2021 à partir de 19H00</p>
+                                <p><i class="bi bi-map"></i> Salle des fêtes de Chaumont </p>
+                                <a href="#" class="w-100 btn btn-lg btn-primary disabled">Inscription à partir du 15 novembre </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Journée Pêche</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Venez avec nous participer à une journée pêche afin de passer un bon moment
+                                    tous ensemble</p>
+                                <p><i class="bi bi-calendar"></i> 11 Mars 2022 à partir de 06h00</p>
+                                <p><i class="bi bi-map"></i> A l'étang de Jonchery (52000) </p>
+                                <a href="#" class="w-100 btn btn-lg btn-primary disabled">Inscription à venir </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Déplacement Cannes / Chaumont</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"> Déplacement en bus, retour prévu le lendemain, modalité de l'hébergement à venir.</p>
+                                <p><i class="bi bi-calendar"></i> 26 Févirer 2022</p>
+                                <p><i class="bi bi-map"></i> Palais des Victoires - Cannes </p>
+                                <a href="#" class="w-100 btn btn-lg btn-primary disabled">Inscription à venir </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
 
