@@ -186,6 +186,12 @@ p{
 }
 /* End A propos de nous */
 /* evenement */
+
 .checkprice{
     color: green;
+}
+/* Calendrier */
+#herocalendrier{
+    background-image: url(/img/bgcalendrier.jpg);
+    background-size: cover;
 }
