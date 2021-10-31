@@ -15,17 +15,21 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+        <!--NAVBAR-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
+                <!-- LOGO + NAME-->
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="img/logo.png" alt="" width="40" height="40" class="d-inline-block mx-1">
+                    <img src="img/logo.png" alt="logo jeunesse chaumontaise" width="40" height="40" class="d-inline-block mx-1">
                     LA JEUNESSE CHAUMONTAISE
                 </a>
+                <!--END LOGO + NAME-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- NAVLINK -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -40,17 +44,25 @@
                         <li class="nav-item">
                             <a class="nav-link" href="evenement.html">Evenements</a>
                         </li>
-                        <form class=" d-lg-none d-flex justify-content-center">
-                            <a class="btn btn-custom me-3" href="adherer.html"><i class="bi bi-plus-square-fill"></i>
-                                Adhérer à l'association </a>
-                        </form>
+                    </ul>
+                    <!-- BTN < LG -->
+                    <form class=" d-lg-none d-flex justify-content-center">
+                        <a class="btn btn-custom me-3" href="adherer.html"><i class="bi bi-plus-square-fill"></i>
+                            Adhérer à l'association </a>
+                    </form>
+                    <!-- BTN < LG -->
                 </div>
+                <!-- END NAVLINK-->
+                <!-- BTN > LG-->
                 <form class="d-none d-lg-block d-flex justify-content-center">
                     <a class="btn btn-custom me-3" href="adherer.html"><i class="bi bi-plus-square-fill"></i>
                         Adhérer à l'association </a>
                 </form>
+                <!--END BTN > LG-->
             </div>
         </nav>
+        <!--END NAVBAR-->
+        <!--HERO-->
         <div id="hero" class="text-center bg-image">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
                 <div class="d-flex justify-content-center align-items-center vh-100">
@@ -59,19 +71,26 @@
                         <h5 class="texthero mb-4 p-5">Tu es un supporter passionné ? Tu souhaite encourager le CVB ? Tu
                             es au bon endroit ! Nous sommes une équipe de supporter soudés et fidèle afin de supporter à
                             chaque match à domicile ou à l'extérieur l'équipe du Chaumont Volley-ball.</h5>
-                        <a class="btn btn-outline-light btn-lg m-2" role="button" rel="nofollow">NOUS REJOINDRE</a>
+                        <!--BTN HERO -->
+                        <a href="adherer.html" class="btn btn-outline-light btn-lg m-2">Nous rejoindre</a>
+                        <!-- END BTN HERO -->
                         <span class="scroll-down"></span>
                     </div>
                 </div>
             </div>
         </div>
+        <!--END HERO-->
     </header>
     <main class="container mt-4 mt-lg-5">
+        <!-- SECTION ABOUT -->
         <section class="about">
             <div class="row align-items-lg-center justify-content-lg-evenly g-0">
-                <article class="col-12 col-lg-6 me-lg-5">
+                <!-- IMG ABOUT -->
+                <div class="col-12 col-lg-6 me-lg-5">
                     <img class="img-fluid p-3" src="img/banniere3.jpg" alt="supporters devant la salle ">
-                </article>
+                </div>
+                <!--END IMG ABOUT -->
+                <!-- ARTICLE ABOUT US-->
                 <article class="aboutus col-12 col-lg-5 mt-3 mt-lg-0 p-3">
                     <h2 class="h2tittle text-center">A PROPOS DE NOUS</h2>
                     <p><strong>La Jeunnesse Chaumontaise </strong>est une
@@ -86,14 +105,18 @@
                         qu'il y a un vrai Public à Chaumont !
                     </p>
                     <div class="d-flex justify-content-center">
-                        <a class="btn btn-custom mb-4 mt-3 mt-lg-5" href="#" role="button">En savoir +</a>
+                        <a class="btn btn-custom mb-4 mt-3 mt-lg-5" href="a-propos-de-nous.html" role="button">En savoir
+                            +</a>
                     </div>
                 </article>
+                <!--END ARTICLE ABOUT US-->
             </div>
         </section>
+        <!-- SECTION EVENEMENT -->
         <section class="evenements mt-lg-5">
             <h2 class="h2tittle text-center text-lg-start">Nos derniers évènements</h2>
             <div class="cargroup row flex-row flex-nowrap">
+                <!-- FIRST CARD-->
                 <div class="col-xs-12 col-lg-4">
                     <div class="card h-100">
                         <img src="img/card1.jpg" class="card-img-top img-fluid h-100" alt="Fidélité des supporters">
@@ -106,6 +129,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- END FIRST CARD -->
+                <!-- SECOND CARD -->
                 <div class="col-xs-12 col-lg-4">
                     <div class="card h-100">
                         <img src="img/card3.jpg" class="card-img-top img-fluid h-100" alt="match contre Monza">
@@ -117,51 +142,75 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-lg-4"">
+                <!-- END SECOND CARD -->
+                <!-- TROUGHT CARD -->
+                <div class="col-xs-12 col-lg-4">
                     <div class=" card h-100">
-                    <img src="img/card2.jpg" class="card-img-top img-fluid h-100" alt="rencontre avec les joueurs">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Quelle déception...</h5>
-                        <p class="card-text">Cette finale nous l'avons perdue tout seul...c'est la dure loi du sport !
-                        </p>
-                        <a href="adherer.html" class="btn btn-custom">Participer avec nous</a>
+                        <img src="img/card2.jpg" class="card-img-top img-fluid h-100" alt="rencontre avec les joueurs">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Quelle déception...</h5>
+                            <p class="card-text">Cette finale nous l'avons perdue tout seul...c'est la dure loi du sport
+                                !
+                            </p>
+                            <a href="adherer.html" class="btn btn-custom">Participer avec nous</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <!-- END THROUGHT CARD -->
             </div>
         </section>
+        <!--END SECTION EVENEMENT-->
+        <!--SECTION FOTOS -->
         <section class="evenements mt-lg-5">
             <h2 class="h2tittle text-center text-lg-start mt-4 ">Quelques photos</h2>
             <div class="row d-flex flex-row flex-nowrap" style="overflow: scroll; overflow-y: hidden; ">
-                <img src="img/supporter1.jpg" class="home-image img-fluid col-xs-12 col-lg-4">
-                <img src="img/supporter2.jpg" class="home image img-fluid col-xs-12 col-lg-4">
-                <img src="img/supporter3.jpg" class="home-image img-fluid col-xs-12 col-lg-4">
-                <img src="img/supporter4.jpg" class="home-image img-fluid col-xs-12 col-lg-4">
-                <img src="img/supporter5.jpg" class="home-image img-fluid col-xs-12 col-lg-4">
-                <img src="img/supporter7.jpg" class="home-image img-fluid col-xs-12 col-lg-4">
+                <img src="img/supporter1.jpg" alt="supporter lors du match cvb-cannes"
+                    class="home-image img-fluid col-xs-12 col-lg-4">
+                <img src="img/supporter2.jpg" alt="rencontre avec les joueurs"
+                    class="home image img-fluid col-xs-12 col-lg-4">
+                <img src="img/supporter3.jpg" alt="joueur et supporters fête la fin de saison "
+                    class="home-image img-fluid col-xs-12 col-lg-4">
+                <img src="img/supporter4.jpg" alt="tifo CVB52" class="home-image img-fluid col-xs-12 col-lg-4">
+                <img src="img/supporter5.jpg" alt="supporter en père noël"
+                    class="home-image img-fluid col-xs-12 col-lg-4">
+                <img src="img/supporter7.jpg" alt="Premiere visite à palestra, nouvelle salle du CVB"
+                    class="home-image img-fluid col-xs-12 col-lg-4">
             </div>
         </section>
+        <!-- END SECTION FOTOS -->
+        <!-- SECTION COVID-19 -->
         <section class="covid mt-5">
             <div class="card-covid col-xs-12 col-lg-6">
                 <div class="row align-items-lg-center justify-content-lg-evenly g-0">
-                    <article class="col-12 col-lg-6 me-lg-5">
+                    <!--IMG COVID-->
+                    <div class="col-12 col-lg-6 me-lg-5">
                         <img class="img-fluid p-3" src="img/covid1.png" alt="information covid-19">
-                    </article>
+                    </div>
+                    <!-- END IMG COVID -->
+                    <!-- ARTCILE INFORMATION COVID -->
                     <article class="col-12 col-lg-5 mt-3 mt-lg-0 p-3">
                         <h2 class="h2tittle text-center text-lg-start">INFORMATION COVID-19</h2>
                         <p>Dans le cadre actuel de la crise sanitaire, nous vous informons que le pass sanitaire est
                             obligatoire pour assister aux matchs. Pour plus d'informations, merci de consulter la page
                             du gouvernement.
                         <div class="d-flex justify-content-center">
+                            <!-- BTN EN SAVOIR PLUS -->
                             <a class="btn btn-custom mb-4 mt-3 mt-lg-5"
-                                href="https://www.gouvernement.fr/info-coronavirus" target="_blank " role="button">En
-                                savoir +</a>
+                                href="https://www.gouvernement.fr/info-coronavirus" target="blank " role="button">En
+                                savoir +
+                            </a>
+                            <!--END BTN EN SAVOIR PLUS-->
                         </div>
                     </article>
+                    <!-- END ARTICLE INFORMATION COVID -->
                 </div>
+            </div>
         </section>
+        <!-- END SECTION COVID-19 -->
+        <!-- SECTION CONTACTEZ-NOUS -->
         <section class="contact my-5">
             <div class="row align-items-lg-center justify-content-lg-evenly g-0">
+                <!--FORM CONTACT -->
                 <form class="text-white col-12 col-lg-4 p-3 m-auto">
                     <h2 class="text-center text-decoration-underline">Contactez-nous</h2>
                     <!-- Name input -->
@@ -169,20 +218,17 @@
                         <label class="form-label" for="name">Nom<sup class="text-danger">*</sup></label>
                         <input type="text" id="name" class="form-control" required />
                     </div>
-
                     <!-- Email input -->
                     <div class="form-outline mb-4">
                         <label class="form-label" for="email">E-mail<sup class="text-danger">*</sup></label>
                         <input type="email" id="email" class="form-control" placeholder="name@exemple.com" required />
                     </div>
-
                     <!-- Message input -->
                     <div class="form-outline mb-4">
                         <label class="form-label" for="comment">Votre message<sup class="text-danger">*</sup></label>
                         <textarea class="form-control" id="comment" rows="4" placeholder="Ecrivez votre message ici"
                             style="resize: none;"></textarea>
                     </div>
-
                     <!-- Checkbox -->
                     <div class="form-check d-flex justify-content-center mb-4">
                         <input class="form-check-input me-2" type="checkbox" value="" id="copy" checked />
@@ -190,35 +236,41 @@
                             M'envoyer une copie de mon message
                         </label>
                     </div>
-
                     <!-- Submit button -->
                     <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary btn-block mb-4">Envoyer</button>
                     </div>
                 </form>
+                <!-- END FORM CONTACT -->
+                <!--IMG LOGO FORM-->
                 <div class="d-none d-lg-block col-xs-12 col-lg-6 d-flex justify-content-center">
                     <img class="w-100" src="/img/logo.png" alt="">
                 </div>
+                <!-- END IMG LOGO FORM -->
             </div>
         </section>
+        <!-- END SECTION CONTACTEZ-NOUS -->
     </main>
-
+    <!--FOOTER-->
     <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
-            <section class="">
-                <form action="">
+            <section>
+                <!--FORM NEWSLETTER-->
+                <form>
                     <div class="row d-flex justify-content-center">
                         <div class="col-auto">
                             <p class="pt-2">
                                 <strong>S'inscrire à notre Newsletter</strong>
                             </p>
                         </div>
+                        <!-- EMAIL INPUT -->
                         <div class="col-md-5 col-12">
                             <div class="form-outline form-white mb-4">
                                 <input type="email" id="form5Example29" class="form-control"
                                     placeholder="Votre adresse e-mail" required />
                             </div>
                         </div>
+                        <!-- SUBMIT BUTTON -->
                         <div class="col-auto">
                             <button type="submit" class="btn btn-outline-light mb-4">
                                 S'inscrire
@@ -226,20 +278,21 @@
                         </div>
                     </div>
                 </form>
+                <!--END FORM NEWSLETTER-->
             </section>
         </div>
         <div class="text-center p-3">
             © 2021 La Jeunesse Chaumontaise
         </div>
     </footer>
-
+    <!-- END FOOTER -->
+    <!--SCROLL UP-->
     <div id="scrollUp">
         <a href="#top"><i class="bi bi-caret-up-square-fill"></i></a>
     </div>
-
+    <!--END SCROLL UP-->
     <!-- javascript -->
     <script src=" bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- END-->
 </body>
-
 </html>
