@@ -1,6 +1,3 @@
-#on ignore le fichier Bootstrap
-/bootstrap-5.1.3-dist
-
 #on ignore les fichiers png et jpg 
 *.png
 *.jpg
