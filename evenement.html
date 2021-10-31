@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,24 +12,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/e98cd34f75.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+        <!--NAVBAR-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
+                <!-- LOGO + NAME-->
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="img/logo.png" alt="" width="40" height="40" class="d-inline-block mx-1">
+                    <img src="img/logo.png" alt="logo jeunesse chaumontaise" width="40" height="40" class="d-inline-block mx-1">
                     LA JEUNESSE CHAUMONTAISE
                 </a>
+                <!--END LOGO + NAME-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- NAVLINK -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="a-propos-de-nous.html">A propos de nous</a>
@@ -39,19 +41,27 @@
                             <a class="nav-link" href="Calendrier.html">Calendrier CVB</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="evenement.html">Evenements</a>
+                            <a class="nav-link" href="evenement.html">Evenements</a>
                         </li>
-                        <form class=" d-lg-none d-flex justify-content-center">
-                            <a class="btn btn-custom me-3" href="adherer.html"><i class="bi bi-plus-square-fill"></i>
-                                Adhérer à l'association </a>
-                        </form>
+                    </ul>
+                    <!-- BTN < LG -->
+                    <form class="d-lg-none d-flex justify-content-center">
+                        <a class="btn btn-custom me-3" href="adherer.html"><i class="bi bi-plus-square-fill"></i>
+                            Adhérer à l'association </a>
+                    </form>
+                    <!-- BTN < LG -->
                 </div>
+                <!-- END NAVLINK-->
+                <!-- BTN > LG-->
                 <form class="d-none d-lg-block d-flex justify-content-center">
                     <a class="btn btn-custom me-3" href="adherer.html"><i class="bi bi-plus-square-fill"></i>
                         Adhérer à l'association </a>
                 </form>
+                <!--END BTN > LG-->
             </div>
         </nav>
+        <!--END NAVBAR-->
+        <!--HERO-->
         <div id="heroevenement" class="bg-image">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
                 <div class="d-flex justify-content-center align-items-center vh-100">
@@ -68,6 +78,7 @@
                 </div>
             </div>
         </div>
+        <!-- END HERO -->
         <nav class="bg-dark " style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb px-md-5 py-3">
                 <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
@@ -76,34 +87,45 @@
         </nav>
     </header>
     <main class="m-5">
+        <!-- SECTION DETAIL DEPLACEMENT -->
         <section>
             <h2 class="h2tittle text-center mb-lg-5">Détail du Déplacement PARIS / Chaumont</h2>
             <div class="row justify-content-center">
+                <!--FIRST DETAIL-->
                 <div class="col-md-3 text-center shadow-lg rounded-3 m-3">
-                    <h2 class="mt-3"><i class="fas fa-bus fa-2x"></i></h2>
+                    <div class="my-3"><i class="fas fa-bus fa-4x"></i></div>
                     <p>Le déplacement se fera en bus, RDV à la gare de Chaumont à 14h00. Retour le soir même après le
                         match.</p>
                 </div>
+                <!-- END FIRST DETAIL-->
+                <!-- SECOND DETAIL -->
                 <div class="col-md-3 text-center shadow-lg rounded-3 m-3">
-                    <h2 class="mt-3"><i class="fas fa-utensils fa-2x"></i></h2>
+                    <div class="my-3"><i class="fas fa-utensils fa-4x"></i></div>
                     <p>Les repas et boissons ne seront pas compris lors du déplacement. Veuillez à vous organiser.</p>
                 </div>
+                <!--END SECOND DETAIL-->
+                <!-- TROUGHT DETAIL -->
                 <div class="col-md-3 text-center shadow-lg rounded-3 m-3">
-                    <h2 class="mt-3"><i class="fas fa-volleyball-ball fa-2x"></i></i></h2>
+                    <div class="my-3"><i class="fas fa-volleyball-ball fa-4x"></i></div>
                     <p>Le billet est compris dans la formule, nous avons une tribune dédiée pour les supporters du CVB !
                         Il va falloir mettre le feu ! <i class="fas fa-fire"></i></p>
                 </div>
+                <!-- END TROUGHT DETAIL -->
+            </div>
         </section>
+        <!-- END SECTION DETAIL DEPLACEMENT -->
+        <!-- SECTION PRICE -->
         <section class="mt-lg-5">
             <h2 class="h2tittle text-center mb-lg-5">Nos Formules de prix :</h2>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <!-- CARD NON ADHERENT -->
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Non-adhérent</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">65€</h1>
+                            <h2 class="card-title pricing-card-title">65€</h2>
                             <ul class="list-unstyled mt-3 mb-4 d-flex flex-column text-start">
                                 <li><i class="checkprice fas fa-check-circle fa-lg"></i> Billet pour le Match
                                     Paris/Chaumont</li>
@@ -117,13 +139,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- END CARD NON ADHERENT -->
+                <!-- CARD ADHESION SEULE -->
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary">
                         <div class="card-header py-3 bg-primary border-primary text-white">
                             <h4 class="my-0 fw-normal">Adhésion seule</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">25€</h1>
+                            <h2 class="card-title pricing-card-title">25€</h2>
                             <ul class="list-unstyled mt-3 mb-4 d-flex flex-column text-start">
                                 <li><i class="checkprice fas fa-check-circle fa-lg"></i> Billet pour le Match
                                     Paris/Chaumont</li>
@@ -137,13 +161,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- END CARD ADHESION SEULE -->
+                <!-- CARD ABONNÉS -->
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm border-success">
                         <div class="card-header py-3 text-white bg-success border-success">
                             <h4 class="my-0 fw-normal">Abonnés à l'association</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">15€</h1>
+                            <h2 class="card-title pricing-card-title">15€</h2>
                             <ul class="list-unstyled mt-3 mb-4 d-flex flex-column text-start">
                                 <li><i class="checkprice fas fa-check-circle fa-lg"></i> Billet pour le Match
                                     Paris/Chaumont</li>
@@ -158,12 +184,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- END CARD ABONNÉS-->
             </div>
             <h4>Personne déjà inscrite :</h4>
+            <!--PROGRESS BAR EVENT -->
             <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
                     aria-valuenow="37" aria-valuemin="0" aria-valuemax="52" style="width: 71%">37 inscrits sur 52</div>
             </div>
+            <!-- END PROGRESS BAR EVENT -->
             <!-- Modal -->
             <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -195,11 +224,12 @@
                                         <input type="number" class="form-control" id="phone" required>
                                     </div>
                                     <div class="col-12">
-                                        <label for="membership" class="form-label">Adhérent ?<sup>*</sup>
-                                            <select class="form-select" id="membership" required>
-                                                <option>Non</option>
-                                                <option>Adhérent seule</option>
-                                                <option>Adhérent avec abonnement</option>
+                                        <label for="membership" class="form-label">Adhérent ?<sup>*</sup></label>
+                                            <select name="adherent" class="form-select" id="membership" required>
+                                                <option value="">Choisir une option</option>
+                                                <option value="non">Non</option>
+                                                <option value="adherent seule">Adhérent seule</option>
+                                                <option value="adherent avec abonnement">Adhérent avec abonnement</option>
                                             </select>
                                     </div>
                                     <div class="form-outline mb-4">
@@ -210,6 +240,7 @@
                                     <div class="d-flex justify-content-end">
                                         <button type="submit" class="btn btn-custom btn-lg">S'inscrire</button>
                                     </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -217,10 +248,12 @@
             </div>
         </section>
         <!-- END Modal -->
+        <!-- SECTION FUTURE EVENTS -->
         <section class="mt-lg-5">
             <h2 class="h2tittle text-center mb-lg-5 mt-5">Nos Evenements à venir :</h2>
             <div class="row justify-content-center">
                 <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <!-- EVENT NOUVEL AN -->
                     <div class="col mb-4">
                         <div class="card rounded-3 shadow-sm h-100">
                             <div class="card-header py-3 ">
@@ -235,6 +268,8 @@
                             </div>
                         </div>
                     </div>
+                    <!--END EVENT NOUVEL AN-->
+                    <!-- EVENT JOURNEE PECHE -->
                     <div class="col">
                         <div class="card mb-4 rounded-3 shadow-sm">
                             <div class="card-header py-3">
@@ -244,43 +279,52 @@
                                 <p class="card-text">Venez avec nous participer à une journée pêche afin de passer un bon moment
                                     tous ensemble</p>
                                 <p><i class="bi bi-calendar"></i> 11 Mars 2022 à partir de 06h00</p>
-                                <p><i class="bi bi-map"></i> A l'étang de Jonchery (52000) </p>
-                                <a href="#" class="w-100 btn btn-lg btn-primary disabled">Inscription à venir </a>
+                                <p><i class="bi bi-map"></i> A l'étang de Jonchery (52000)</p>
+                                <a href="#" class="w-100 btn btn-lg btn-primary disabled">Inscription à venir</a>
                             </div>
                         </div>
                     </div>
+                    <!-- END EVENT JOURNEE PECHE -->
+                    <!-- EVENT DEPLACEMENT -->
                     <div class="col">
                         <div class="card mb-4 rounded-3 shadow-sm">
                             <div class="card-header py-3">
                                 <h4 class="my-0 fw-normal">Déplacement Cannes / Chaumont</h4>
                             </div>
                             <div class="card-body">
-                                <p class="card-text"> Déplacement en bus, retour prévu le lendemain, modalité de l'hébergement à venir.</p>
+                                <p class="card-text">Déplacement en bus, retour prévu le lendemain, modalité de l'hébergement à venir.</p>
                                 <p><i class="bi bi-calendar"></i> 26 Févirer 2022</p>
                                 <p><i class="bi bi-map"></i> Palais des Victoires - Cannes </p>
                                 <a href="#" class="w-100 btn btn-lg btn-primary disabled">Inscription à venir </a>
                             </div>
                         </div>
                     </div>
+                    <!-- END EVENT DEPLACEMENT -->
                 </div>
+            </div>
         </section>
+        <!-- END SECTION FUTURE EVENTS -->
     </main>
-    <footer class="bg-dark text-center text-white">
+     <!--FOOTER-->
+     <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
-            <section class="">
-                <form action="">
+            <section>
+                <!--FORM NEWSLETTER-->
+                <form>
                     <div class="row d-flex justify-content-center">
                         <div class="col-auto">
                             <p class="pt-2">
                                 <strong>S'inscrire à notre Newsletter</strong>
                             </p>
                         </div>
+                        <!-- EMAIL INPUT -->
                         <div class="col-md-5 col-12">
                             <div class="form-outline form-white mb-4">
                                 <input type="email" id="form5Example29" class="form-control"
                                     placeholder="Votre adresse e-mail" required />
                             </div>
                         </div>
+                        <!-- SUBMIT BUTTON -->
                         <div class="col-auto">
                             <button type="submit" class="btn btn-outline-light mb-4">
                                 S'inscrire
@@ -288,18 +332,21 @@
                         </div>
                     </div>
                 </form>
+                <!--END FORM NEWSLETTER-->
             </section>
         </div>
         <div class="text-center p-3">
             © 2021 La Jeunesse Chaumontaise
         </div>
     </footer>
+    <!-- END FOOTER -->
+    <!--SCROLL UP-->
     <div id="scrollUp">
         <a href="#top"><i class="bi bi-caret-up-square-fill"></i></a>
     </div>
+    <!--END SCROLL UP-->
     <!-- javascript -->
     <script src=" bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- END-->
 </body>
-
 </html>
